@@ -5,8 +5,9 @@ Created on 22 de oct. de 2015
 @author: jlurqui
 '''
 
-from django.db import models 
+from django.db import models
 from django.utils import timezone
+
 
 class Cliente(models.Model):
     '''
@@ -21,5 +22,8 @@ class Cliente(models.Model):
 
     @classmethod
     def create(cls, nombre, domicilio, poblacion, telefono, email):
-        return Cliente(nombre=nombre, domicilio=domicilio, poblacion=poblacion, 
+        return Cliente(nombre=nombre, domicilio=domicilio, poblacion=poblacion,
                        telefono=telefono, email=email)
+
+    def __str__(self,):
+        return self.nombre

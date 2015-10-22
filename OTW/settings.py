@@ -87,7 +87,11 @@ WSGI_APPLICATION = 'OTW.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+<<<<<<< HEAD
         'NAME': 'otw',
+=======
+        'NAME': 'otw2',
+>>>>>>> 6076c5538d2dfed49b10ef330ab6b042bfc81649
         'USER': 'otw',
         'PASSWORD': 'otw283424',
         'HOST': '192.168.200.219',
@@ -97,9 +101,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 

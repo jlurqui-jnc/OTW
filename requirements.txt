@@ -5,4 +5,3 @@ django-flat-theme
 -e git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2
 
 djangorestframework==3.2.4
-

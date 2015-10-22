@@ -7,6 +7,7 @@ Created on 22 de oct. de 2015
 
 from django.db import models
 
+
 class EstadoOrden(models.Model):
     '''
     Esta clase incluye los datos de los estados posibles de una orden de trabajo
@@ -16,3 +17,6 @@ class EstadoOrden(models.Model):
     @classmethod
     def create(cls, descripcion):
         return EstadoOrden(descripcion=descripcion)
+
+    def __str__(self,):
+        return self.descripcion

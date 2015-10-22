@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//OTW/migrations/0001_initial.py=utf-8
 encoding//OTW/models/accionOrden.py=utf-8
 encoding//OTW/models/articulo.py=utf-8
 encoding//OTW/models/cliente.py=utf-8
