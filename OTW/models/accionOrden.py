@@ -9,6 +9,8 @@ from django.db import models
 from django.utils import timezone
 
 from .orden import Orden
+from .operario import Operario
+
 
 class AccionOrden(models.Model):
     '''
@@ -20,4 +22,5 @@ class AccionOrden(models.Model):
     fechainicio = models.DateTimeField(default=timezone.now)
     orden = models.ForeignKey(Orden, related_name='acciones')
     precio = models.DecimalField(default=0, max_digits=8, decimal_places=2)
-    unidades = models.DecimalField(default=0, max_digits=8, decimal_places=2)    
+    unidades = models.DecimalField(default=0, max_digits=8, decimal_places=2)
+    operario = models.ForeignKey(Operario, related_name='acciones_orden')
