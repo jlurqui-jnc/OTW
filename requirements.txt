@@ -1,6 +1,8 @@
 django==1.8.5
 django-extensions
 django-flat-theme
-psycopg2
+#psycopg2
+pip install git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2
+
 djangorestframework==3.2.4
 
