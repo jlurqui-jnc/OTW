@@ -23,4 +23,4 @@ class Articulo(models.Model):
         return Articulo(descripcion=descripcion)
 
     def __str__(self,):
-        return self.nombre
+        return self.descripcion
