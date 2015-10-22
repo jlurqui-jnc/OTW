@@ -12,6 +12,7 @@ from .cliente import Cliente
 from .estadoOrden import EstadoOrden
 from .operario import Operario
 
+
 class Orden(models.Model):
     '''
     Esta clase incluye los datos de cabecera de una orden de trabajo
@@ -25,8 +26,8 @@ class Orden(models.Model):
     resolucion = models.TextField(max_length=2048, null=True)
     responsable = models.ForeignKey(Operario, related_name='ordenes')
     solicitud = models.TextField(max_length=2048)
-    
+
     @classmethod
     def create(cls, cliente, estado, fechainicio, responsable, solicitud):
-        return Orden(cliente=cliente, estado=estado, fechainicio=fechainicio, 
+        return Orden(cliente=cliente, estado=estado, fechainicio=fechainicio,
                      responsable=responsable, solicitud=solicitud)

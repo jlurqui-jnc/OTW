@@ -12,6 +12,7 @@ class EstadoOrden(models.Model):
     '''
     Esta clase incluye los datos de los estados posibles de una orden de trabajo
     '''
+    codigo = models.CharField(max_length=10, primary_key=True)
     descripcion = models.CharField(max_length=50)
 
     @classmethod
