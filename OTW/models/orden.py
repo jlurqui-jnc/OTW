@@ -33,4 +33,4 @@ class Orden(models.Model):
                      responsable=responsable, solicitud=solicitud)
 
     def __str__(self,):
-        return "{}: {}".format(self.cliente, self.solicitud)
+        return "{} - {}: {}".format(self.pk, self.cliente, self.solicitud)
