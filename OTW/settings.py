@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'OTW.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'otw',
+        'NAME': 'otw2',
         'USER': 'otw',
         'PASSWORD': 'otw283424',
         'HOST': '192.168.200.219',
