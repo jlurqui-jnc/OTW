@@ -6,7 +6,7 @@ class OrdenSerializer(ModelSerializer):
 
     class Meta:
         model = Orden
-        fields = ('cliente', 'estado',
+        fields = ('pk', 'cliente', 'estado',
                   'fechainicio', 'fechafin',
                   'observaciones', 'resolucion',
                   'responsable', 'solicitud')

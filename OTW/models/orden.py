@@ -31,3 +31,6 @@ class Orden(models.Model):
     def create(cls, cliente, estado, fechainicio, responsable, solicitud):
         return Orden(cliente=cliente, estado=estado, fechainicio=fechainicio,
                      responsable=responsable, solicitud=solicitud)
+
+    def __str__(self,):
+        return "{}: {}".format(self.cliente, self.solicitud)
