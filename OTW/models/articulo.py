@@ -8,6 +8,7 @@ Created on 22 de oct. de 2015
 from django.db import models
 from django.utils import timezone
 
+
 class Articulo(models.Model):
     '''
     Esta clase incluye los datos de un artículo
@@ -20,3 +21,6 @@ class Articulo(models.Model):
     @classmethod
     def create(cls, descripcion):
         return Articulo(descripcion=descripcion)
+
+    def __str__(self,):
+        return self.nombre
