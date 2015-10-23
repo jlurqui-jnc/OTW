@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'OTW',
     'api',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,24 +78,15 @@ WSGI_APPLICATION = 'OTW.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
+
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-<<<<<<< HEAD
-        'NAME': 'otw',
-=======
         'NAME': 'otw2',
->>>>>>> 6076c5538d2dfed49b10ef330ab6b042bfc81649
         'USER': 'otw',
         'PASSWORD': 'otw283424',
         'HOST': '192.168.200.219',
+        'USER': 'otw',
     }
 }
 
