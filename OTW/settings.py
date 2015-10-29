@@ -78,15 +78,20 @@ WSGI_APPLICATION = 'OTW.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'otw2',
         'USER': 'otw',
         'PASSWORD': 'otw283424',
         'HOST': '192.168.200.219',
-        'USER': 'otw',
     }
 }
 
